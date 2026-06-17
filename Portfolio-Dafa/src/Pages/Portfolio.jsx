@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import * as THREE from "three";
+import logo from "../assets/images/Dafa-logo.svg"; 
+import pdp from "../assets/images/pdp.jpg"// Remplace par ton logo si tu veux
 
 // ─── DESIGN TOKENS ────────────────────────────────────────────────
 const TOKENS = {
@@ -1357,7 +1359,16 @@ export default function Portfolio() {
             cursor: "pointer",
           }}
         >
-          <Avatar size={28} dark={dark} />
+          <img
+            src={logo}
+            alt="Dafa Logo"
+            style={{
+              width: 58,
+              height: 58,
+              objectFit: "contain",
+            }}
+          />
+
           <span
             style={{
               fontSize: 14,
@@ -1366,7 +1377,7 @@ export default function Portfolio() {
               color: t.text,
             }}
           >
-            Alex Dubois
+            HERIMANDA Fiononantsoa
           </span>
         </button>
 
@@ -1458,7 +1469,16 @@ export default function Portfolio() {
               marginBottom: 32,
             }}
           >
-            <Avatar size={72} dark={dark} glowing />
+            <img
+              src={pdp}
+              alt="Photo de profil"
+              style={{
+                width: 72,
+                height: 72,
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
             <div>
               <div style={{ fontSize: 18, fontWeight: 700, color: t.text }}>
                 Alex Dubois
