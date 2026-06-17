@@ -142,10 +142,10 @@ const SKILLS_GROUPS = [
     color: "accent",
     icon: "◈",
     items: [
-      { name: "React / Next.js", level: 92 },
-      { name: "TypeScript", level: 85 },
-      { name: "Vue 3", level: 78 },
-      { name: "CSS / Animation", level: 80 },
+      { name: "React JS", level: 90 },
+      { name: "TypeScript", level: 80 },
+      { name: "Tailwind CSS", level: 78 },
+      { name: "CSS / HTML", level: 80 },
     ],
   },
   {
@@ -154,7 +154,7 @@ const SKILLS_GROUPS = [
     icon: "◉",
     items: [
       { name: "Node.js / Express", level: 88 },
-      { name: "GraphQL", level: 78 },
+      { name: "Laravel", level: 78 },
       { name: "REST API Design", level: 90 },
       { name: "Python / FastAPI", level: 70 },
     ],
@@ -164,10 +164,10 @@ const SKILLS_GROUPS = [
     color: "green",
     icon: "◌",
     items: [
-      { name: "PostgreSQL", level: 80 },
-      { name: "Docker / K8s", level: 74 },
-      { name: "Redis", level: 72 },
-      { name: "AWS / Vercel", level: 75 },
+      { name: "MongoDB", level: 80 },
+      { name: "Docker", level: 74 },
+      { name: "K8s", level: 72 },
+      { name: "VmWare", level: 75 },
     ],
   },
 ];
@@ -1085,7 +1085,7 @@ function SkillsContent({ dark }) {
     violet: { fill: t.violet, glow: t.violetGlow, border: t.violet },
     green: { fill: t.green, glow: t.greenGlow, border: t.green },
   };
-  const tools = ["Git", "CI/CD", "AWS", "Vercel", "Figma", "Supabase", "MongoDB", "Prisma", "Jest", "Vitest", "Nx", "pnpm"];
+  const tools = ["Git", "CI/CD", "AWS", "Vercel", "Figma", "Supabase", "PostgreSQL", "Prisma", "Vitest", "Nx", "Mysql"];
 
   return (
     <>
@@ -1381,7 +1381,7 @@ export default function Portfolio() {
           minHeight: "100vh", display: "grid", gridTemplateColumns: "1fr 1fr",
           alignItems: "center", gap: 40,
           padding: "80px clamp(24px, 6vw, 100px) 60px",
-          maxWidth: 1280, margin: "0 auto",
+          maxWidth: 1340, margin: "0 auto",
         }}
       >
         <div>
@@ -1489,7 +1489,7 @@ export default function Portfolio() {
 
       {/* ══ PROJECTS ══ */}
       <section id="projects" ref={(el) => (sectionRefs.current.projects = el)}
-        style={{ padding: "100px clamp(20px, 6vw, 100px)", maxWidth: 1280, margin: "0 auto" }}>
+        style={{ padding: "100px clamp(24px, 4vw, 48px)", maxWidth: 1340, margin: "0 auto" }}>
         <FadeSection>
           <div style={{ marginBottom: 48 }}>
             <SectionLabel color={t.accent}>SELECTED WORK</SectionLabel>
@@ -1529,7 +1529,7 @@ export default function Portfolio() {
 
       {/* ══ SKILLS ══ */}
       <section id="skills" ref={(el) => (sectionRefs.current.skills = el)}
-        style={{ padding: "100px clamp(20px, 6vw, 100px)", maxWidth: 1100, margin: "0 auto" }}>
+        style={{ padding: "100px clamp(24px, 4vw, 48px)", maxWidth: 1340, margin: "0 auto" }}>
         <FadeSection>
           <div style={{ marginBottom: 48 }}>
             <SectionLabel color={t.violet}>TECH STACK</SectionLabel>
@@ -1545,7 +1545,7 @@ export default function Portfolio() {
 
       {/* ══ EXPERIENCE — split layout: timeline left, 3D graph right ══ */}
       <section id="experience" ref={(el) => (sectionRefs.current.experience = el)}
-        style={{ padding: "100px clamp(20px, 6vw, 100px)", maxWidth: 1180, margin: "0 auto" }}>
+        style={{ padding: "100px clamp(24px, 4vw, 48px)", maxWidth: 1340, margin: "0 auto" }}>
         <FadeSection>
           <div style={{ marginBottom: 48 }}>
             <SectionLabel color={t.accent}>PARCOURS</SectionLabel>
@@ -1607,7 +1607,7 @@ export default function Portfolio() {
 
       {/* ══ CONTACT — split layout: 3D signal left, card right ══ */}
       <section id="contact" ref={(el) => (sectionRefs.current.contact = el)}
-        style={{ padding: "100px clamp(20px, 6vw, 100px)", maxWidth: 1100, margin: "0 auto" }}>
+        style={{ padding: "100px clamp(24px, 4vw, 48px)", maxWidth: 1340, margin: "0 auto" }}>
         <FadeSection>
           <div style={{ marginBottom: 48 }}>
             <SectionLabel color={t.violet}>CONTACT</SectionLabel>
