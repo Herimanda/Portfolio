@@ -174,22 +174,22 @@ const SKILLS_GROUPS = [
 
 const EXPERIENCE = [
   {
-    year: "2023 – Présent",
-    role: "Senior Full-Stack Dev",
-    company: "TechNova",
-    desc: "Lead technique sur une plateforme SaaS B2B — architecture microservices, API design, mentoring équipe de 6 devs.",
+    year: "Avril 2026 – Présent",
+    role: "Administrateur Système et Réseau et Full-Stack Dev",
+    company: "Bpo Concept",
+    desc: "Administrateur système et réseau ainsi que developpeur full-stack MERN.",
   },
   {
-    year: "2021 – 2023",
-    role: "Full-Stack Developer",
-    company: "Meridian Labs",
-    desc: "Développement de features produit en React + Rails, mise en place CI/CD, optimisation performances.",
+    year: "Juin 2025 – Novembre 2025",
+    role: "Stagiaire Administrateur Système et Réseau",
+    company: "Ministère de la Jeunesse et des Sports",
+    desc: "Deploiement et administration d'une infrastructure réseau et système sécurisée.",
   },
   {
-    year: "2019 – 2021",
-    role: "Frontend Developer",
-    company: "Pixel & Co",
-    desc: "Interfaces réactives, design system interne, intégrations API tierces.",
+    year: "Septembre 2022 – Novembre 2023",
+    role: "Stagiaire Administrateur Système et Réseau",
+    company: "Ministère de l'Enseignement Technique et de la Formation Professionnelle",
+    desc: "Maintenance et supervision du park informatique avec Centreon.",
   },
 ];
 
@@ -1424,7 +1424,7 @@ export default function Portfolio() {
             </div>
 
             <div>
-              <div style={{ fontSize: 19, fontWeight: 700, color: t.text, letterSpacing: "-0.01em" }}>Alex Dubois</div>
+              <div style={{ fontSize: 19, fontWeight: 700, color: t.text, letterSpacing: "-0.01em" }}>HERIMANDA Fiononantsoa</div>
               <div style={{ fontSize: 13, color: t.textMuted, marginTop: 3 }}>Développeur Full-Stack · Remote</div>
               <div style={{ display: "flex", gap: 7, marginTop: 10 }}>
                 <Badge dark={dark} accent>Available for hire</Badge>
@@ -1444,7 +1444,7 @@ export default function Portfolio() {
             de bout en bout
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.7, color: t.textMuted, maxWidth: 440, marginBottom: 36 }}>
-            5 ans d'expérience. Je conçois des APIs robustes, des interfaces fluides et des architectures pensées pour durer.
+            2 ans d'expérience. Je conçois des APIs robustes, des interfaces fluides et des architectures pensées pour durer.
           </p>
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 52 }}>
@@ -1464,7 +1464,7 @@ export default function Portfolio() {
           </div>
 
           <div style={{ display: "flex", gap: 36 }}>
-            {[["5+", "ans d'expérience"], ["20+", "projets livrés"], ["8", "techno maîtrisées"]].map(([n, l]) => (
+            {[["2+", "ans d'expérience"], ["15+", "projets réalisés"], ["4", "techno maîtrisées"]].map(([n, l]) => (
               <div key={l}>
                 <div style={{ fontSize: 26, fontWeight: 700, color: t.accent, letterSpacing: "-0.02em" }}>{n}</div>
                 <div style={{ fontSize: 12, color: t.textMuted, marginTop: 2 }}>{l}</div>
@@ -1515,7 +1515,7 @@ export default function Portfolio() {
           }}>
             <div>
               <div style={{ fontSize: 14, fontWeight: 500, color: t.text }}>Voir tout sur GitHub</div>
-              <div style={{ fontSize: 12, color: t.textMuted, marginTop: 2 }}>+12 projets open-source</div>
+              <div style={{ fontSize: 12, color: t.textMuted, marginTop: 2 }}>+10 projets open-source</div>
             </div>
             <a href="https://github.com" style={{
               padding: "9px 20px", borderRadius: 8, background: t.accentGlow,
@@ -1633,9 +1633,9 @@ export default function Portfolio() {
               borderRadius: 20, padding: "32px", display: "flex", flexDirection: "column", gap: 14,
             }}>
               {[
-                { label: "Email", value: "alex.dubois@dev.io", href: "mailto:alex.dubois@dev.io", icon: "✉" },
-                { label: "LinkedIn", value: "linkedin.com/in/alexdubois", href: "#", icon: "in" },
-                { label: "GitHub", value: "github.com/alexdubois", href: "#", icon: "⌥" },
+                { label: "Email", value: "herimanda23@gmail.com", href: "mailto:herimanda23@gmail.com", icon: "✉" },
+                { label: "LinkedIn", value: "linkedin.com/in/Herimanda", href: "#", icon: "in" },
+                { label: "GitHub", value: "https://github.com/Herimanda", href: "#", icon: "⌥" },
               ].map(({ label, value, href, icon }) => (
                 <a key={label} href={href} style={{
                   display: "flex", alignItems: "center", gap: 16, textDecoration: "none",
@@ -1665,8 +1665,8 @@ export default function Portfolio() {
                 background: t.accentGlow, border: `1px solid ${t.border}`,
               }}>
                 <div style={{ fontSize: 13, color: t.textMuted, lineHeight: 1.65 }}>
-                  💼 <strong style={{ color: t.text }}>Disponible dès maintenant</strong> — Remote ou Antananarivo / Paris.
-                  Je recherche un poste full-stack senior ou une collaboration sur un produit ambitieux.
+                  💼 <strong style={{ color: t.text }}>Disponible dès maintenant</strong> — Remote ou Antananarivo .
+                  Je recherche un poste full-stack  ou une collaboration sur un produit ambitieux.
                 </div>
               </div>
             </div>
@@ -1679,7 +1679,7 @@ export default function Portfolio() {
         textAlign: "center", padding: "28px 24px", borderTop: `1px solid ${t.border}`,
         fontSize: 11, color: t.textFaint, fontFamily: "monospace",
       }}>
-        built with React · Three.js · love &nbsp;·&nbsp; © 2025 Alex Dubois
+        built with React · Three.js · love &nbsp;·&nbsp; © 2025 Dafa
       </footer>
 
       {activeModal && (
