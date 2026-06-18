@@ -2,6 +2,18 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import * as THREE from "three";
 import logo from "../assets/images/Dafa-logo.svg";
 import pdp from "../assets/images/pdp.jpg";
+import iconReact from "../assets/images/react-svgrepo-com.svg";
+import iconCss from "../assets/images/css-3-svgrepo-com.svg";
+import iconDocker from "../assets/images/docker-svgrepo-com.svg";
+import iconK8s from "../assets/images/kubernetes-svgrepo-com.svg";
+import iconLaravel from "../assets/images/laravel-svgrepo-com.svg";
+import iconMongo from "../assets/images/mongodb-svgrepo-com.svg";
+import iconNode from "../assets/images/node-js-svgrepo-com.svg";
+import iconPython from "../assets/images/python-svgrepo-com.svg";
+import iconRest from "../assets/images/rest-api-svgrepo-com.svg";
+import iconVmware from "../assets/images/software-vmware-workstation-svgrepo-com.svg";
+import iconTailwind from "../assets/images/tailwind-svgrepo-com.svg";
+import iconTs from "../assets/images/typescript-official-svgrepo-com.svg";
 
 // ─── DESIGN TOKENS ────────────────────────────────────────────────
 const TOKENS = {
@@ -142,10 +154,10 @@ const SKILLS_GROUPS = [
     color: "accent",
     icon: "◈",
     items: [
-      { name: "React JS", level: 90 },
-      { name: "TypeScript", level: 80 },
-      { name: "Tailwind CSS", level: 78 },
-      { name: "CSS / HTML", level: 80 },
+      { name: "React JS", level: 90, icon: iconReact },
+      { name: "TypeScript", level: 80, icon: iconTs },
+      { name: "Tailwind CSS", level: 78, icon: iconTailwind },
+      { name: "CSS / HTML", level: 80, icon: iconCss },
     ],
   },
   {
@@ -153,10 +165,10 @@ const SKILLS_GROUPS = [
     color: "violet",
     icon: "◉",
     items: [
-      { name: "Node.js / Express", level: 88 },
-      { name: "Laravel", level: 78 },
-      { name: "REST API Design", level: 90 },
-      { name: "Python / FastAPI", level: 70 },
+      { name: "Node.js / Express", level: 88, icon: iconNode },
+      { name: "Laravel", level: 78, icon: iconLaravel },
+      { name: "REST API Design", level: 90, icon: iconRest },
+      { name: "Python / FastAPI", level: 70, icon: iconPython },
     ],
   },
   {
@@ -164,10 +176,10 @@ const SKILLS_GROUPS = [
     color: "green",
     icon: "◌",
     items: [
-      { name: "MongoDB", level: 80 },
-      { name: "Docker", level: 74 },
-      { name: "K8s", level: 72 },
-      { name: "VmWare", level: 75 },
+      { name: "MongoDB", level: 80, icon: iconMongo },
+      { name: "Docker", level: 74, icon: iconDocker },
+      { name: "K8s", level: 72, icon: iconK8s },
+      { name: "VmWare", level: 75, icon: iconVmware },
     ],
   },
 ];
@@ -1672,11 +1684,23 @@ function SkillsContent({ dark }) {
                     marginBottom: 10,
                   }}
                 >
-                  <span
-                    style={{ fontSize: 14, fontWeight: 600, color: t.text }}
-                  >
-                    {skill.name}
-                  </span>
+                <span
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: t.text,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 8,
+                  }}
+                >
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    style={{ width: 20, height: 20, objectFit: "contain" }}
+                  />
+                  {skill.name}
+                </span>
                   <span
                     style={{
                       fontSize: 22,
@@ -2365,7 +2389,7 @@ export default function Portfolio() {
               </div>
             </div>
             <a
-              href="https://github.com"
+              href="https://github.com/Herimanda"
               style={{
                 padding: "9px 20px",
                 borderRadius: 8,
