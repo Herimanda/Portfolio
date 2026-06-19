@@ -1036,16 +1036,27 @@ export default function Portfolio() {
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: scrolled ? (dark ? "linear-gradient(90deg,transparent 0%,rgba(99,211,255,0.25) 30%,rgba(167,139,250,0.25) 70%,transparent 100%)" : "linear-gradient(90deg,transparent 0%,rgba(37,99,235,0.2) 30%,rgba(124,58,237,0.2) 70%,transparent 100%)") : "transparent", transition: "background 0.35s" }} />
 
         {/* Logo */}
-        <button onClick={() => scrollTo("hero")} style={{ display: "flex", alignItems: "center", gap: 11, background: "none", border: "none", cursor: "pointer", padding: "4px 0", flexShrink: 0 }}>
-          <div style={{ position: "relative" }}>
-            <div style={{ position: "absolute", inset: -2, borderRadius: 10, background: `radial-gradient(circle,${dark ? "rgba(99,211,255,0.18)" : "rgba(37,99,235,0.12)"} 0%,transparent 70%)`, opacity: scrolled ? 0 : 1, transition: "opacity 0.4s" }} />
-            <img src={logo} alt="Logo" style={{ width: 46, height: 46, objectFit: "contain", position: "relative", zIndex: 1 }} />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 1, textAlign: "left" }}>
-            <span style={{ fontSize: 13.5, fontWeight: 700, letterSpacing: "-0.02em", color: t.text, lineHeight: 1.2 }}>HERIMANDA</span>
-            <span style={{ fontSize: 10, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.12em", color: t.accent, lineHeight: 1 }}>Fiononantsoa</span>
-          </div>
-        </button>
+          <button onClick={() => scrollTo("hero")} style={{ display: "flex", alignItems: "center", gap: 11, background: "none", border: "none", cursor: "pointer", padding: "4px 0", flexShrink: 0 }}>
+            <div style={{ position: "relative" }}>
+              <img
+                src={logo}
+                alt="Logo"
+                style={{
+                  width: 46, height: 46,
+                  objectFit: "contain",
+                  position: "relative", zIndex: 1,
+                  filter: dark
+                    ? "brightness(1.15) drop-shadow(0 0 6px rgba(99,211,255,0.35))"
+                    : "none",
+                  transition: "filter 0.3s"
+                }}
+              />
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 1, textAlign: "left" }}>
+              <span style={{ fontSize: 13.5, fontWeight: 700, letterSpacing: "-0.02em", color: t.text, lineHeight: 1.2 }}>HERIMANDA</span>
+              <span style={{ fontSize: 10, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.12em", color: t.accent, lineHeight: 1 }}>Fiononantsoa</span>
+            </div>
+          </button>
 
         {/* Desktop nav links */}
         {!isMobile && (
@@ -1306,7 +1317,7 @@ export default function Portfolio() {
 
       {/* ── FOOTER ── */}
       <footer style={{ textAlign: "center", padding: "24px 24px", borderTop: `1px solid ${t.border}`, fontSize: 11, color: t.textFaint, fontFamily: "monospace" }}>
-        built with React · Three.js · love &nbsp;·&nbsp; © 2025 Dafa
+        built with React · Three.js · love &nbsp;·&nbsp; © 2026 Lolimaid
       </footer>
 
       {activeModal && <ProjectModal project={activeModal} dark={dark} onClose={() => setActiveModal(null)} />}
