@@ -2774,7 +2774,7 @@ export default function Portfolio() {
           fontFamily: "monospace",
         }}
       >
-        built with React · Three.js · love &nbsp;·&nbsp; © 2025 Dafa
+        built with React · Three.js · love &nbsp;·&nbsp; © 2025 Lolimaid
       </footer>
 
       {activeModal && (
