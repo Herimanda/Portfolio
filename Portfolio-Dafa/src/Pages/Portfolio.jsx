@@ -15,6 +15,31 @@ import iconVmware from "../assets/images/software-vmware-workstation-svgrepo-com
 import iconTailwind from "../assets/images/tailwind-svgrepo-com.svg";
 import iconTs from "../assets/images/typescript-official-svgrepo-com.svg";
 
+// Smart Collaboration APP
+import smartcollab1 from "../assets/images/Projet/smartcollab1.png";
+import smartcollab2 from "../assets/images/Projet/smartcollab2.png";
+import smartcollab3 from "../assets/images/Projet/smartcollab3.png";
+import smartcollab4 from "../assets/images/Projet/smartcollab4.png";
+import smartcollab5 from "../assets/images/Projet/smartcollab5.png";
+
+// ChatApp
+import chatbot1 from "../assets/images/Projet/chatbot1.png";
+import chatbot2 from "../assets/images/Projet/chatbot2.png";
+import chatbot3 from "../assets/images/Projet/chatbot3.png";
+import chatbot4 from "../assets/images/Projet/chatbot4.png";
+
+// ANIME (e-commerce)
+import ecommerce1 from "../assets/images/Projet/ecommerce1.png";
+import ecommerce2 from "../assets/images/Projet/ecommerce2.png";
+import ecommerce3 from "../assets/images/Projet/ecommerce3.png";
+import ecommerce4 from "../assets/images/Projet/ecommerce4.png";
+
+// IA Vicitelecom
+import iavicitelecom1 from "../assets/images/Projet/iavicitelecom1.png";
+import iavicitelecom2 from "../assets/images/Projet/iavicitelecom2.png";
+import iavicitelecom3 from "../assets/images/Projet/iavicitelecom3.png";
+import iavicitelecom4 from "../assets/images/Projet/iavicitelecom4.png";
+
 // ─── DESIGN TOKENS ────────────────────────────────────────────────
 const TOKENS = {
   dark: {
@@ -53,97 +78,72 @@ const TOKENS = {
   },
 };
 
-// ─── SCREENSHOT PLACEHOLDERS ──────────────────────────────────────
-const makeScreenshot = (label, c1, c2, idx) =>
-  `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-  <defs><linearGradient id="g${idx}" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="${c1}"/><stop offset="100%" stop-color="${c2}"/>
-  </linearGradient></defs>
-  <rect width="900" height="520" fill="url(#g${idx})"/>
-  <rect x="0" y="0" width="900" height="44" fill="rgba(0,0,0,0.3)"/>
-  <circle cx="24" cy="22" r="7" fill="#ff5f56"/><circle cx="46" cy="22" r="7" fill="#ffbd2e"/><circle cx="68" cy="22" r="7" fill="#27c93f"/>
-  <rect x="200" y="12" width="500" height="20" rx="10" fill="rgba(255,255,255,0.1)"/>
-  <rect x="40" y="80" width="200" height="360" rx="8" fill="rgba(0,0,0,0.2)"/>
-  <rect x="56" y="100" width="168" height="20" rx="4" fill="rgba(255,255,255,0.15)"/>
-  <rect x="56" y="132" width="120" height="12" rx="3" fill="rgba(255,255,255,0.08)"/>
-  <rect x="56" y="152" width="140" height="12" rx="3" fill="rgba(255,255,255,0.08)"/>
-  <rect x="260" y="80" width="600" height="180" rx="8" fill="rgba(0,0,0,0.2)"/>
-  <rect x="280" y="100" width="200" height="16" rx="3" fill="rgba(255,255,255,0.2)"/>
-  <rect x="280" y="126" width="340" height="10" rx="3" fill="rgba(255,255,255,0.1)"/>
-  <rect x="260" y="278" width="185" height="160" rx="8" fill="rgba(0,0,0,0.18)"/>
-  <rect x="455" y="278" width="185" height="160" rx="8" fill="rgba(0,0,0,0.18)"/>
-  <rect x="650" y="278" width="185" height="160" rx="8" fill="rgba(0,0,0,0.18)"/>
-  <text x="450" y="490" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.3)" text-anchor="middle">${label}</text>
-</svg>`)}`;
-
 // ─── DATA ─────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    title: "Nexus API Platform",
-    subtitle: "Plateforme API haute performance",
-    desc: "Plateforme RESTful & GraphQL haute performance avec rate limiting, auth JWT, logs temps réel et dashboard analytics.",
+    title: "Smart Collaboration APP",
+    subtitle: "Platerforme de collaboration intelligente pour équipes distantes",
+    desc: "Plateforme REST API & haute performance avec rate limiting, auth JWT, gestion de tache et dashboard analytics.",
     longDesc:
       "Nexus est une plateforme API conçue pour les équipes engineering qui ont besoin de fiabilité à grande échelle. Elle expose un endpoint GraphQL unifié par-dessus plusieurs microservices, avec un système de rate limiting par tenant, authentification JWT avec rotation automatique des clés, et un moteur de logs temps réel basé sur WebSocket.",
-    tags: ["Node.js", "GraphQL", "PostgreSQL", "Redis", "Docker"],
-    role: "Lead Backend",
-    year: "2024",
-    github: "#",
-    live: "#",
+    tags: ["Node.js", "Rest API", "MongoDB", "Tailwind CSS", "Docker"],
+    role: "Dev full-stack",
+    year: "2026",
+    github: "https://github.com/Herimanda/",
     screenshots: [
-      makeScreenshot("Dashboard — Vue principale", "#0d1a2e", "#1a2a4a", 0),
-      makeScreenshot("API Explorer — GraphQL", "#0a1f1a", "#123028", 1),
-      makeScreenshot("Analytics — Métriques live", "#1a0d2e", "#2a1a4a", 2),
+      smartcollab1,
+      smartcollab2,
+      smartcollab3,
     ],
   },
   {
-    title: "Orbit CMS",
-    subtitle: "CMS headless nouvelle génération",
-    desc: "CMS headless avec éditeur rich-text, versioning, workflows d'approbation et CDN intégré.",
+    title: "ChatApp",
+    subtitle: "Chat interne temps réel avec assistant IA intégré",
+    desc: "ChatApp est une application web de communication interne offrant une messagerie moderne et des échanges en temps réel au sein d'une organisation.",
     longDesc:
-      "Orbit CMS répond au besoin des équipes éditoriales de gérer du contenu structuré sans couplage au frontend. L'éditeur rich-text supporte les blocs custom, les médias embarqués et la collaboration temps réel. Le système de versioning permet de comparer et restaurer n'importe quelle révision.",
-    tags: ["React", "Next.js", "Prisma", "S3", "TypeScript"],
+      "ChatApp est une application web de communication interne développée avec la stack MERN offrant une messagerie moderne et des échanges en temps réel au sein d'une organisation.",
+    tags: ["React", "Node Js", "MongoDB", "TypeScript"],
     role: "Full-Stack",
-    year: "2023",
-    github: "#",
-    live: "#",
+    year: "2025",
+    github: "https://github.com/Herimanda/",
     screenshots: [
-      makeScreenshot("Éditeur de contenu", "#1a1208", "#2a2010", 3),
-      makeScreenshot("Gestion des médias", "#081218", "#102030", 4),
-      makeScreenshot("Workflows", "#180820", "#280a30", 5),
+      chatbot1,
+      chatbot2,
+      chatbot3,
     ],
   },
   {
-    title: "Pulse Dashboard",
-    subtitle: "Monitoring microservices temps réel",
-    desc: "Dashboard de monitoring : métriques, alertes intelligentes, traçage distribué et logs agrégés.",
+    title: "ANIME",
+    subtitle: "Plateforme E-commerce pour produits dérivés d'anime",
+    desc: "ANIME est une plateforme e-commerce dédiée aux produits dérivés d'anime, offrant une expérience d'achat simple, personnalisée et intuitive.",
     longDesc:
-      "Pulse agrège métriques Prometheus, traces OpenTelemetry et logs structurés dans une interface unifiée. Les alertes sont configurables par seuil, avec escalade automatique et intégration Slack/PagerDuty. Le traçage distribué permet de suivre une requête à travers tous les services impliqués.",
-    tags: ["Vue 3", "WebSocket", "InfluxDB", "Docker", "Prometheus"],
-    role: "Frontend Lead",
-    year: "2023",
-    github: "#",
-    live: "#",
+      "ANIME est une plateforme e-commerce dédiée aux produits dérivés d'anime, développée avec React JS et une architecture backend basée sur Node.js et MongoDB pour la gestion des données en temps réel. Elle offre une expérience utilisateur immersive avec des fonctionnalités de personnalisation avancées, un système de recommandation basé sur les préférences des utilisateurs, et une interface intuitive pour faciliter la navigation et les achats.",
+    tags: ["React js", "Node JS", "MongoDB", "Docker"],
+    role: "Full-Stack",
+    year: "2024",
+    github: "https://github.com/Herimanda/",
     screenshots: [
-      makeScreenshot("Overview — Santé globale", "#0a1a0a", "#122212", 6),
-      makeScreenshot("Trace Explorer", "#080e1a", "#101830", 7),
-      makeScreenshot("Alerting", "#1a0a0a", "#2a1010", 8),
+      ecommerce1,
+      ecommerce2,
+      ecommerce3,
+      ecommerce4
     ],
   },
   {
-    title: "Stellar Auth",
-    subtitle: "SDK d'authentification open-source",
-    desc: "SDK multi-langages : OAuth2, OIDC, MFA, sessions sécurisées et rotation automatique des clés.",
+    title: "IA Vicitelecom",
+    subtitle: "IA d'appel de Prospection pour Vicitelecom",
+    desc: "IA vicitelecom est une solution d'appel de prospection automatisée utilisant l'IA pour engager les prospects de manière naturel",
     longDesc:
-      "Stellar Auth implémente les specs OAuth2 et OIDC complètes, avec MFA TOTP/WebAuthn, gestion de sessions multi-devices, et rotation automatique des clés RSA. Le SDK est disponible pour Node.js, Python, Go et Ruby.",
-    tags: ["TypeScript", "OAuth2", "JWT", "Crypto", "Node.js"],
-    role: "Author & Maintainer",
-    year: "2022",
-    github: "#",
-    live: "#",
+      "IA Vicitelecom est une solution d'appel de prospection automatisée développée avec Node.js et intégrant des technologies d'IA avancées pour engager les prospects de manière naturelle et efficace. Elle utilise des modèles de traitement du langage naturel pour comprendre les réponses des prospects et adapter les conversations en temps réel, améliorant ainsi les taux de conversion et l'efficacité des campagnes marketing.",
+    tags: ["React Js", "Node js", "MongoDB", "Asterisk", "Docker"],
+    role: "Frontend Developer",
+    year: "2026",
+    github: "https://github.com/Herimanda/",
     screenshots: [
-      makeScreenshot("Documentation interactive", "#0a0a1a", "#12103a", 9),
-      makeScreenshot("Flows OAuth2", "#0a1210", "#102018", 10),
-      makeScreenshot("SDK Playground", "#100a1a", "#1e1030", 11),
+      iavicitelecom1,
+      iavicitelecom2,
+      iavicitelecom3,
+      iavicitelecom4
     ],
   },
 ];
@@ -1147,7 +1147,7 @@ function ProjectModal({ project, dark, onClose }) {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover",
+              objectFit: "contain",
               opacity: sliding ? 0 : 1,
               transition: "opacity 0.18s",
             }}
@@ -1377,21 +1377,6 @@ function ProjectModal({ project, dark, onClose }) {
                 }}
               >
                 GitHub →
-              </a>
-              <a
-                href={project.live}
-                style={{
-                  padding: "7px 14px",
-                  borderRadius: 8,
-                  textDecoration: "none",
-                  background: accentGlow,
-                  border: `1px solid ${accent}`,
-                  fontSize: 12,
-                  color: accent,
-                  fontWeight: 500,
-                }}
-              >
-                Live →
               </a>
             </div>
           </div>
@@ -2186,15 +2171,17 @@ export default function Portfolio() {
             }}
           >
             Je construis des{" "}
-            <span
-              style={{
-                background: `linear-gradient(135deg, ${t.accent}, ${t.violet})`,
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              systèmes élégants
-            </span>{" "}
+          <span
+            style={{
+              backgroundImage: `linear-gradient(135deg, ${t.accent}, ${t.violet})`,
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            systèmes élégants
+          </span>{" "}
             de bout en bout
           </h1>
           <p
