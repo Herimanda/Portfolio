@@ -12,11 +12,11 @@ export const PROJECTS = [
     subtitle: "Platerforme de collaboration intelligente pour équipes distantes",
     desc: "Plateforme REST API & haute performance avec rate limiting, auth JWT, gestion de tache et dashboard analytics.",
     longDesc:
-      "Nexus est une plateforme API conçue pour les équipes engineering qui ont besoin de fiabilité à grande échelle. Elle expose un endpoint GraphQL unifié par-dessus plusieurs microservices, avec un système de rate limiting par tenant, authentification JWT avec rotation automatique des clés, et un moteur de logs temps réel basé sur WebSocket.",
+      "Application moderne de collaboration conçue pour optimiser la communication et la gestion des projets au sein des équipes distantes. Basée sur une architecture REST API performante, elle intègre une authentification sécurisée via JWT, un système avancé de gestion des tâches, le suivi des projets en temps réel et un tableau de bord analytique interactif. La plateforme inclut également des mécanismes de rate limiting pour renforcer la sécurité et garantir la stabilité des services, tout en offrant une expérience utilisateur fluide, évolutive et adaptée aux environnements de travail collaboratifs.",
     tags: ["Node.js", "Rest API", "MongoDB", "Tailwind CSS", "Docker"],
     role: "Dev full-stack",
     year: "2026",
-    github: "https://github.com/Herimanda/",
+    github: "https://github.com/Herimanda/Smart-collab",
     screenshots: [smartcollab1, smartcollab2, smartcollab3],
   },
   {
@@ -28,7 +28,7 @@ export const PROJECTS = [
     tags: ["React", "Node Js", "MongoDB", "TypeScript"],
     role: "Full-Stack",
     year: "2025",
-    github: "https://github.com/Herimanda/",
+    github: "https://github.com/Herimanda/Chatbot/",
     screenshots: [chatbot1, chatbot2, chatbot3],
   },
   {
