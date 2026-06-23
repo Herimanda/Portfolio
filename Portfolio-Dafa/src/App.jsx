@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Portfolio from './Pages/Portfolio'
+import Portfolio from './Portfolio'
 
 const App = () => {
   return (
