@@ -1,8 +1,12 @@
 import {
   smartcollab1, smartcollab2, smartcollab3,
-  chatbot1, chatbot2, chatbot3,
   ecommerce1, ecommerce2, ecommerce3, ecommerce4,
   iavicitelecom1, iavicitelecom2, iavicitelecom3, iavicitelecom4,
+  Erp1,
+  Erp2,
+  Erp3,
+  Erp4,
+  Erp5
 } from "./assets";
 
 // ─── DATA: PROJECTS ───────────────────────────────────────────────
@@ -20,16 +24,16 @@ export const PROJECTS = [
     screenshots: [smartcollab1, smartcollab2, smartcollab3],
   },
   {
-    title: "ChatApp",
-    subtitle: "Chat interne temps réel avec assistant IA intégré",
-    desc: "ChatApp est une application web de communication interne offrant une messagerie moderne et des échanges en temps réel au sein d'une organisation.",
+    title: "ERP AUTO",
+    subtitle: "Plateforme de gestion et suivi de stock pour magasins de vente de pièces automobiles",
+    desc: "ERP Auto est une application web de gestion commerciale concue pour les entreprises possedant un ou plusieurs magasins de vente de pieces automobiles et accessoires.",
     longDesc:
-      "ChatApp est une application web de communication interne développée avec la stack MERN offrant une messagerie moderne et des échanges en temps réel au sein d'une organisation.",
+      "ERP Auto est une application web de gestion commerciale concue pour les entreprises possedant un ou plusieurs magasins de vente de pieces automobiles et accessoires.",
     tags: ["React", "Node Js", "MongoDB", "TypeScript"],
     role: "Full-Stack",
     year: "2025",
-    github: "https://github.com/Herimanda/Chatbot/",
-    screenshots: [chatbot1, chatbot2, chatbot3],
+    github: "https://github.com/Herimanda/Erp_auto/",
+    screenshots: [Erp1, Erp2, Erp3, Erp4, Erp5],
   },
   {
     title: "ANIME",

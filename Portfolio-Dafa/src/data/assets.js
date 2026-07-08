@@ -17,9 +17,6 @@ import iconTs from "../assets/images/typescript-official-svgrepo-com.svg";
 import smartcollab1 from "../assets/images/Projet/smartcollab1.png";
 import smartcollab2 from "../assets/images/Projet/smartcollab2.png";
 import smartcollab3 from "../assets/images/Projet/smartcollab3.png";
-import chatbot1 from "../assets/images/Projet/chatbot1.png";
-import chatbot2 from "../assets/images/Projet/chatbot2.png";
-import chatbot3 from "../assets/images/Projet/chatbot3.png";
 import ecommerce1 from "../assets/images/Projet/ecommerce1.png";
 import ecommerce2 from "../assets/images/Projet/ecommerce2.png";
 import ecommerce3 from "../assets/images/Projet/ecommerce3.png";
@@ -28,6 +25,11 @@ import iavicitelecom1 from "../assets/images/Projet/iavicitelecom1.png";
 import iavicitelecom2 from "../assets/images/Projet/iavicitelecom2.png";
 import iavicitelecom3 from "../assets/images/Projet/iavicitelecom3.png";
 import iavicitelecom4 from "../assets/images/Projet/iavicitelecom4.png";
+import Erp1 from "../assets/images/Projet/Erp1.png";
+import Erp2 from "../assets/images/Projet/Erp2.png";
+import Erp3 from "../assets/images/Projet/Erp3.png";
+import Erp4 from "../assets/images/Projet/Erp4.png";
+import Erp5 from "../assets/images/Projet/Erp5.png";
 
 export {
   logo,
@@ -47,9 +49,6 @@ export {
   smartcollab1,
   smartcollab2,
   smartcollab3,
-  chatbot1,
-  chatbot2,
-  chatbot3,
   ecommerce1,
   ecommerce2,
   ecommerce3,
@@ -58,4 +57,9 @@ export {
   iavicitelecom2,
   iavicitelecom3,
   iavicitelecom4,
+  Erp1,
+  Erp2,
+  Erp3,
+  Erp4,
+  Erp5
 };
