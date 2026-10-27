@@ -76,7 +76,7 @@ export function HeroSection({ dark, sectionRef, scrollTo }) {
             </div>
             <div style={{ fontSize: 13, color: t.textMuted, marginTop: 3 }}>Développeur Full-Stack · Remote</div>
             <div style={{ display: "flex", gap: 7, marginTop: 10, flexWrap: "wrap" }}>
-              <Badge dark={dark} accent>Available for hire</Badge>
+              <Badge dark={dark} accent>Disponible de suite</Badge>
               <Badge dark={dark}>Full-Stack Dev</Badge>
             </div>
           </div>

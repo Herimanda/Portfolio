@@ -1,7 +1,7 @@
 // ─── DATA: EXPERIENCE ─────────────────────────────────────────────
 export const EXPERIENCE = [
   {
-    year: "Avril 2026 – Présent",
+    year: "Avril 2026 – Octobre 2026",
     role: "Administrateur Système et Réseau et Full-Stack Dev",
     company: "Bpo Concept",
     desc: "Administrateur système et réseau ainsi que developpeur full-stack MERN.",
